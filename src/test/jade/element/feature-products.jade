@@ -1,0 +1,32 @@
+include ../asset/mixin
+.feature-products.cl
+  .container
+    .inner-container
+      h2.title.title-use-ico Feature Products
+      #slider-products.flexslider.slider-products
+        ul.slides
+          -for (var x = 0; x < 9; x++)
+            li
+              .inner
+                figure.item-image
+                  a(href="#")
+                    img(src="dummy/product-slider.jpg", alt="")
+
+                article.item-data
+                  h3.item-tile Products ttile - 
+                    span.price $500
+                  p.desctiption
+                    | Cucumber avocado gumbo dulse watercress grape peanut fennel. Turnip turnip greens silver beet pea sprouts sierra leone bologi okra eggplant ricebean groundnut rutabaga lotus root brussels sprout wattle seed garlic mustard. Komatsuna gourd soko bush tomato gumbo celery garbanzo salsify pumpkin leek garlic quandong gram chickpea.Veggies sunt bona vobis, proinde vos postulo esse magis leek watercress lettuce swiss chard turnip soko sierra leone bologi kakadu plum lentil kale fennel carrot zucchini peanut courgette earthnut pea.
+
+                .item-action
+                  a.button.view-product(href='#') View Detail
+                  a.add_to_cart_button.button.product_type_simple(href='#') Add to cart
+                  //- 
+                    a.add_to_cart_button.button.product_type_simple.loading(href='#') Add to cart
+                    a.add_to_cart_button.button.product_type_simple.added(href='#') Add to cart
+                    a.button.product_type_variable Select options
+                    a.added_to_cart view cart
+
+// End .feature-products.cl
+
+

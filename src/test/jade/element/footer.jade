@@ -1,0 +1,17 @@
+include ../asset/mixin
+footer#colophon.site-footer.cl(role='contentinfo')
+  .container
+    .inner-container
+      nav(class="site-navigation subsidiary-navigation", role="navigation")
+        ul
+          each subsidiary, index in ['home', 'Products', 'cart', 'blog', 'Archive', 'contact']
+            li
+              a(href="#")
+                | #{subsidiary}
+
+      div.new-social-wrap
+        each social, index in ['facebook', 'twitter', 'rss', 'youtube']
+          a(href="#", class="new-social new-" + social, title="follow on" + social)
+              | #{social}
+
+// End footer#colophon.site-footer.cl(role='contentinfo')

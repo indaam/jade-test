@@ -1,0 +1,57 @@
+.cl {
+	@include clearfix;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.iblock {
+	@include inline-block;
+}
+
+.alignleft {
+	@include float( left );
+	margin-right: 1.5em;
+}
+
+.alignright {
+	@include float( right );
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+.alignnone {
+    display: block;
+}
+
+.accessible-text {
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.hide-text {
+	@include hide-text;
+}
+
+.no-list-style {
+	@include reset-list;
+}

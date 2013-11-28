@@ -1,0 +1,72 @@
+.cart_totals,
+.order_details,
+#order_review{/* table */
+
+	th:first-child,
+	td:first-child{
+		text-align: right;
+	}
+
+}
+
+.order-actions{
+	text-align: center;
+	.button{
+		@include inline-block;
+	}
+}
+
+.quantity{
+	.plus,
+	.minus{
+
+	}
+}
+
+.col2-set{
+	@include clearfix;
+	label{
+		display: block;
+		&.checkbox{
+			display: inline;
+		}
+	}
+}
+
+.form-row-first,
+.form-row-last,
+.col-2,
+.col-1{
+	@include float(left);
+	width: 48%;
+	margin-right: 4%;
+}
+
+.form-row-last,
+.col-2{
+	margin-right: 0;
+}
+
+ul.payment_methods{
+	@include reset-list;
+}
+
+table.variations{
+
+	border-width: 0;
+	td{
+		border-width: 0;
+
+	}
+	.label{
+		width: 60px;
+	}
+
+}
+
+.lost_password{
+	display: block;
+	max-width: 120px;
+	margin-top: 12px;
+}
+

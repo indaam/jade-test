@@ -1,0 +1,59 @@
+include asset/mixin
+
++head('Home', 'http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500|Roboto+Slab:400,300,700,100')
+
+body.layout-1c-full
+  #page.site
+    
+    header#masthead.site-header(role='banner')
+      .container
+        .top-wrap
+          include element/header-top
+          include element/header-menu
+        .bottom-wrap
+          .page-title
+            span home
+      // End .container
+
+    #main.site-main
+      .container
+        section#primary.content-area
+          #content.site-content.hfeed
+            .wrap-product.recent-products
+              h3.title-wrap.title-use-ico recent products
+                a.see-all(href="#", title="see all") see all products
+
+              ul.products.item-wrap
+                include element/list-product
+
+            .feature-intro
+              h2.title Snapshop is the best camera shop online
+              p.desctiption Veggies sunt bona vobis, proinde vos postulo esse magis leek watercress lettuce swiss chard turnip soko sierra leone bologi kakadu plum lentil kale fennel carrot zucchini peanut courgette earthnut pea.
+            .feature-subscribe
+              h2.title Never miss the latest update from snapshop.
+              p.desctiption subscribe to our newletter.
+              .content-subscribe
+                .form-wrap
+                  form(id="#", method="", action="")
+                    input.input-text(placeholder="enter email")
+                    input(type="submit", value="subscribe")
+          // End #content.site-content.hfeed
+
+        aside#secondary.widget-area.sidebar(role='complementary')
+          include element/widget-mini
+          
+
+      // End .container
+    // End #main.site-main
+
+    include element/feature-products
+    include element/feature-testimonial
+    include element/feature-brand
+    include element/widget-bottom
+    include element/footer
+
+  // End #page.site
+
+  +add-js
+
++end

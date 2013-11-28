@@ -1,0 +1,10 @@
+include ../asset/mixin
+.feature-brand.cl
+  .container
+    .inner-container
+      ul.brand-content
+        each brand, index in ['cannon', 'casio', 'nikon', 'pentax', 'samsung', 'sony']
+          li.brand-list
+            a(href="#").brand
+              img(src="dummy/brand/" + brand + ".png", alt="")
+// End .feature-brand.cl

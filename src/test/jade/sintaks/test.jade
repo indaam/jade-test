@@ -1,0 +1,133 @@
+include asset/mixin
+
+//- +header-logo
+//- +header-title
+//- +searcform
+//- +primary-menu
+//- +widget
+//- +widget2
++woo-images
++woo-shorting
+
+
+
+include html-inc/mixin
+
++header('index', 'http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700')
+
+body.2cls
+  div#page.site
+    header(id="masthead", class="site-header", role="banner")
+    // End #masthead
+    div#main
+      .contaisner
+      p.
+        Lo
+        "\n"
+      p.
+        ddasasas
+      p<="Foo\nBar"
+      p.
+        lorem10sd
+      p.
+        colors 
+
+    +footer
+
+
+
+.lorem
+  | colore
+  | linesa
+  | 
+  |
+
+span.misal
+  | text
+
+
+dodol = {1: 'one', 2: 'two', 3: 'three',  4: 'four'}
+li
+  each val, index in dodol
+
+    div= index + ': ' + val
+
+dodol2 = ['one', 'two', 'three', 'four', "five", "six", "seven"]
+
+ul
+  each val, index in dodol2
+    li=index+1
+      div lorem
+        span.dodol
+          | text
+          | textasasass
+          |
+
+nilaiku = 8
+
+ul
+  for index in dodol2
+    li=index
+
+ul
+  for book in nilaiku
+    li= book
+
+ol
+  each nilai in dodol2
+    li=nilai
+
+dl
+  each nilai in dodol2
+    li= nilai
+
+- for (var x = 0; x < 8; x++)
+  li(class="end" + x)
+
+p= 'This code is' + ' <div id="read">!'
+
+
+
+//if lt IE 8
+//endif
+
+ul
+  -for (var x = 0; x < 8; x++)
+    li(class="menu-item")
+      a(href="#") this link
+  li(class="menu-item mega-menu")
+    a(href="#") link again
+    ul.chil-menu
+      li
+        a(href="#") sub menu
+
+.widget-bottom
+
+  .widget-col
+    .widget
+    .widget
+    .widget
+    .widget
+  // End widget-col
+
+
+  .widget-col
+    .widget
+    .widget
+    .widget
+    .widget
+  // End widget-col
+
+  .widget-col
+    .widget
+    .widget
+    .widget
+    .widget
+  // End widget-col
+  .widget-col
+    .widget
+    .widget
+    .widget
+    .widget
+  // End widget-col
+// End widget-bottom
